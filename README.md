@@ -1,115 +1,116 @@
+🚀 React + TypeScript + Vite — Alert System Project
 
-# React + TypeScript + Vite Starter
+This project is a simple and modern Alert Management System built using React, TypeScript, and Vite.
+It allows users to add, edit, and delete alerts with multiple alert types such as:
 
-A minimal, blazing-fast starter template for React 19 using Vite, TypeScript, and SWC-powered Fast Refresh.
+Success
 
-Ideal for new projects, prototypes, or learning modern React with zero boilerplate.
+Warning
 
-## Features
+Info
 
-- ⚡️ Vite – Instant server start and lightning-fast HMR  
-- ⚛️ React 19 + Fast Refresh (via `@vitejs/plugin-react-swc`)  
-- TypeScript – Full type safety out of the box  
-- ESLint – Pre-configured with sensible defaults  
-- No extra build tools – Just `npm install` and go!
+Danger
 
-## Quick Start
+Default
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+The interface is styled with SCSS, using variables, mixins, animations, and soft shadows for a polished UI.
 
-npm install
-npm run dev
-```
+📌 Features
 
-Open http://localhost:5173 to see your app.
+✔️ Add new alerts
 
-## Available Scripts
+✔️ Edit existing alerts
 
-```bash
-npm run dev       # Start development server
-npm run build     # Build for production
-npm run preview   # Preview production build locally
-npm run lint      # Run ESLint
-```
+✔️ Delete alerts
 
-## Optional: Enable Type-Checked ESLint Rules (Recommended for Production)
+✔️ Select alert type
 
-Replace or update your `eslint.config.js`:
+✔️ Smooth CSS animations
 
-```js
-import tseslint from 'typescript-eslint';
+✔️ Clean SCSS-based UI
 
-export default tseslint.config(
-  { ignores: ['dist'] },
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      ...tseslint.configs.recommendedTypeChecked,
-      ...tseslint.configs.stylisticTypeChecked, // optional but nice
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.app.json', './tsconfig.node.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  }
-);
-```
+✔️ LocalStorage persistence
 
-## Optional: Add Advanced React-Specific Lint Rules
+✔️ Fast development with Vite
 
-```bash
-npm install -D eslint-plugin-react-x eslint-plugin-react-dom
-```
+🧱 Tech Stack
 
-Then add to your ESLint config:
+React 18
 
-```js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+TypeScript
 
-export default tseslint.config(
-  // ...other configs
-  reactX.configs['recommended-typescript'],
-  reactDom.configs.recommended
-);
-```
+Vite
 
-## React Compiler (Experimental)
+SCSS / SASS
 
-The React Compiler is **not enabled by default** because it currently slows down dev & build performance.
+Lucide React Icons
 
-When you're ready to try it, follow the official guide:  
-https://react.dev/learn/react-compiler/installation
-
-## Project Structure
-
-```
+📂 Project Structure
 src/
-  ├── assets/        # Images, icons, fonts
-  ├── components/    # Your reusable components go here
-  ├── App.tsx
-  ├── main.tsx
-  └── vite-env.d.ts
-```
+ ├─ components/
+ │   └─ ui/
+ │       └─ Alert/
+ │           ├─ Alert.tsx
+ │           ├─ AlertForm.tsx
+ │           ├─ AlertFormWrapper.tsx
+ │           └─ alert.scss
+ ├─ types/
+ │   └─ index.ts
+ ├─ App.tsx
+ ├─ main.tsx
+ └─ styles/
+     └─ variables.scss
 
-## Built With
+▶️ Getting Started
+1. Install dependencies
+npm install
 
-- [Vite](https://vitejs.dev)
-- [React 19](https://react.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [SWC](https://swc.rs) (faster than Babel)
-- [ESLint](https://eslint.org) + typescript-eslint
+2. Run the development server
+npm run dev
 
-## License
+3. Build for production
+npm run build
 
-MIT © 2025 Your Name (or your GitHub username)
+🎨 UI & Styling (SCSS)
 
----
-Just copy and paste this entire file as your `README.md` — it's ready to go!
-```
+The project uses:
 
-Just replace `your-username/your-repo-name` and the copyright name if you want. Then paste it directly into your project root as `README.md`. Done!
+Color variables
+
+Reusable mixins for alert components
+
+Smooth fade/scale animations
+
+Modern box shadows
+
+Responsive layout
+
+Example SCSS features used:
+
+$color variables
+
+@mixins for alert boxes
+
+Transition animations
+
+Shadows and border styles
+
+Each alert type (danger, info, warning, success, default) is generated using a single SCSS mixin.
+
+💡 About This Project
+
+This project is great for practicing:
+
+React + TypeScript logic
+
+Reusable component design
+
+CRUD state management
+
+Form handling
+
+SCSS mixins & variables
+
+UI animations
+
+Clean file structure
