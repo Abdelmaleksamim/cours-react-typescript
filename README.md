@@ -1,6 +1,4 @@
-Here is the complete, ready-to-paste `README.md` file for your React + TypeScript + Vite project:
 
-```markdown
 # React + TypeScript + Vite Starter
 
 A minimal, blazing-fast starter template for React 19 using Vite, TypeScript, and SWC-powered Fast Refresh.
