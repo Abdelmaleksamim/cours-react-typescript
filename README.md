@@ -279,8 +279,3 @@ Credits:
 
 ---
 
-If you'd like, I can:
-- generate complete example files (full vite.config.js, package.json, sample components) for both apps,
-- or produce a short quickstart script to bootstrap and run the two apps.
-
-Tell me which of those you'd like next.
